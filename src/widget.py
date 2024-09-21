@@ -16,6 +16,7 @@ def mask_account_card(card_number: str) -> str:
 
 
 def get_date(date_string: str) -> str:
+    """ Функция преобразующая формат времени в ДД.ММ.ГГГГ """
     date_part = date_string.split("T")[0]
 
     year, month, day = date_part.split("-")
