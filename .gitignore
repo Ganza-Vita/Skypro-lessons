@@ -1,0 +1,8 @@
+.venv/
+src/
+.flake8
+.flake8
+.idea/
+README.md
+main.py
+poetry.lock
