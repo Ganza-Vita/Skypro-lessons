@@ -1,4 +1,4 @@
-from src.masks import get_mask_account
+from src.widget import mask_account_card
 
 
-print(get_mask_account("Visa Platinum 7000792289606361"))
+print(mask_account_card("Счет 73654108430135874305"))
