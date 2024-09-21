@@ -11,5 +11,4 @@ def mask_account_card(card_number: str) -> str:
         return get_mask_account(formatted_number)
     else:
         return get_mask_card_number(formatted_number)
-    print(formatted_number)
 
