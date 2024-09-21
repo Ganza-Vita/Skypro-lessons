@@ -18,4 +18,3 @@ def get_mask_account(account_number: str | int) -> str | int:
 
     mask = f"**{account_number[-4:]}"
     return mask
-svdsdsc
