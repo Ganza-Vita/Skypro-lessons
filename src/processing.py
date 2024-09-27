@@ -13,3 +13,13 @@ def filter_by_state(operations: List[Dict], state: str = 'EXECUTED') -> List[Dic
             filtered_operations.append(operation)
 
     return filtered_operations
+
+
+def sort_by_date(operations: List[Dict], reverse: bool = True) -> List[Dict]:
+    """
+    Функция сортирует операции по дате.
+    """
+
+    sorted_operations = sorted(operations, key=lambda operation: operation.get('date'), reverse=reverse)
+
+    return sorted_operations
