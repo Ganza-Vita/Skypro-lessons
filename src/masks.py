@@ -1,9 +1,11 @@
 def get_mask_card_number(card_number: str) -> str:
     """Функция маскирующая номер карты"""
-    if len(card_number) != 16 or not card_number.isdigit():
-        raise ValueError("Номер карты должен содержать 16 цифр.")
+    string_without_spaces = ''.join(card_number.split())
 
-    masked_number = f"{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
+    if len(string_without_spaces) != 16 or not string_without_spaces.isdigit():
+        return "Номер карты должен содержать 16 цифр."
+
+    masked_number = f"{string_without_spaces[:4]} {string_without_spaces[4:6]}** **** {string_without_spaces[-4:]}"
 
     return masked_number
 
