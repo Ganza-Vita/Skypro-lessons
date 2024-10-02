@@ -1,5 +1,5 @@
 from src.generators import transaction_descriptions
-from src.primery import transactions
+from tests.information_test import transactions
 
 
 def test_transactions_descriptions_1() -> None:

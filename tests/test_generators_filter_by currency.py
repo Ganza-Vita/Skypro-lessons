@@ -1,5 +1,5 @@
 from src.generators import filter_by_currency
-from src.primery import transactions
+from tests.information_test import transactions
 
 
 def test_filter_by_currency_1() -> None:
