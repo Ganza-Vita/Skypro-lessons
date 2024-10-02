@@ -17,6 +17,14 @@ git clone https://github.com/Ganza-Vita/Skypro-lessons
 pip install -r requirements.txt
 ```
 
+## Тестирование
+
+В проекте использован фреймворк для тестирования "_pytest_"
+Для запуска тестирования выполните команду
+```
+pytest --cov
+```
+
 ## Использование:
 
 1. Откройте проект в среде программирования PyCharm или в VsCode.
