@@ -1,31 +1,16 @@
+from src.generators import transaction_descriptions
 from src.primery import transactions
 
-from src.generators import transaction_descriptions
 
-import pytest
-
-
-
-def test_transactions_descriptions_1():
+def test_transactions_descriptions_1() -> None:
     generator_transactions = transaction_descriptions(transactions)
-    excepted_results = "Перевод организации"
+    expected_results = "Перевод организации"
 
-    assert next(generator_transactions) == excepted_results
+    assert next(generator_transactions) == expected_results
 
-def test_transactions_descriptions_2():
+
+def test_transactions_descriptions_2() -> None:
     generator_transactions = transaction_descriptions([])
-    excepted_results = []
+    expected_results = []
 
-    assert list(generator_transactions) == excepted_results
-
-
-
-
-
-
-
-
-
-
-
-
+    assert list(generator_transactions) == expected_results

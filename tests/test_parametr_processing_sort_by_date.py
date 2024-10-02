@@ -34,5 +34,5 @@ from src.processing import sort_by_date
         ),
     ],
 )
-def test_sort_by_date(operations, reverse, expected_output):
+def test_sort_by_date(operations: list[dict[str, str]], reverse: bool, expected_output: list[dict[str, str]]) -> None:
     assert sort_by_date(operations, reverse) == expected_output
