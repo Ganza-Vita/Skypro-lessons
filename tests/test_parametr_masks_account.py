@@ -12,5 +12,5 @@ from src.masks import get_mask_account
         ("dfewffds", "Номер счета должен содержать как минимум 4 цифры."),
     ],
 )
-def test_get_mask_card_number_param_1(card_number, expected):
+def test_get_mask_account_param_1(card_number: str, expected: str) -> None:
     assert get_mask_account(card_number) == expected

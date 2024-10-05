@@ -25,5 +25,5 @@ from src.masks import get_mask_card_number
         ("", "Номер карты должен содержать 16 цифр."),
     ],
 )
-def test_get_mask_card_number_param_1(card_number, expected):
+def test_get_mask_card_number_param_1(card_number: str, expected: str) -> None:
     assert get_mask_card_number(card_number) == expected

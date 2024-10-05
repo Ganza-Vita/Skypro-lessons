@@ -1,5 +1,3 @@
-from typing import Any
-
 import pytest
 
 from src.widget import get_date
@@ -20,5 +18,5 @@ from src.widget import get_date
         ("2023-03-01T12:00:00Z", "01.03.2023"),
     ],
 )
-def test_get_date(input_date: str, expected_output: str) -> Any:
+def test_get_date(input_date: str, expected_output: str) -> None:
     assert get_date(input_date) == expected_output

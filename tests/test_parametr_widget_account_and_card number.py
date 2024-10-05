@@ -15,9 +15,8 @@ from src.widget import mask_account_card
         ("Visa Gold 5999414228426353", "Visa Gold 5999 41** **** 6353"),
         ("Счет 73654108430135874305", "Счет **4305"),
         ("", "Некорректный номер"),
-        ("", "Некорректный номер"),
-        ("sdfsdaf", "Некорректный номер"),
+        ("invalid_input", "Некорректный номер"),
     ],
 )
-def test_mask_account_card(card_number, expected):
+def test_mask_account_card(card_number: str, expected: str) -> None:
     assert mask_account_card(card_number) == expected

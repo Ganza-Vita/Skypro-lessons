@@ -31,5 +31,5 @@ from src.processing import filter_by_state
         ),
     ],
 )
-def test_filter_by_state(operations, state, expected_output):
+def test_filter_by_state(operations: list[dict[str, str]], state: str, expected_output: list[dict[str, str]]) -> None:
     assert filter_by_state(operations, state) == expected_output
